@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.scss" />
+    <script src="index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" >
+      $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+    
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+      });
+    </script>
+    <title>Personal Site</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="container-header">
+        <ul class="header-container">
+          
+          <li class="ethan">Ethan.</li>
+          <div class="navbar">
+            <a class="link" href="#section1">Home</a>
+            <a class="link" href="#section2">Skills</a>
+            <a class="link" href="#section3">Projects</a>
+            <a class="link">Contact</a>
+          </div>
+          <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <div class="intro-container">
+      <section id="section1"></section>
+      <p class="intro">
+        Hi, I’m Ethan. A Bachelor of ICT graduate with a passion for UI/UX
+        design and software development.
+      </p>
+    </div>
+    <div class="grouped">
+      <div class="bio-container">
+        <div class="profile-image">
+          <img src="images/Memoji Boys 4-7.png" alt="" />
+          <span></span>
+        </div>
+        <div class="bio-name-container">
+          <div class="level2-container">
+            <div class="name">Ethan Ezra Nagoor</div>
+            <div class="about">
+              An ICT degree holder, I excel in both software development and
+              UI/UX design. My passion lies in creating user-focused digital
+              experiences while crafting robust and elegant software solutions.
+            </div>
+            <div class="button" data-tooltip="cv_ethan.pdf">
+              <div class="button-wrapper">
+                <div class="text">Download CV</div>
+                <span class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    role="img"
+                    width="2em"
+                    height="2em"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="connect-container">
+        <div class="connect">Connect with me</div>
+        <div class="links-container">
+          <div class="connect-link"><a href="mailto:ethannagoor1002@gmail.com?&subject=Connect"><img src="images/Email.png" alt="" /></a>
+          </div>
+          <div class="connect-link">
+            <a href="https://www.linkedin.com/in/ethan-ezra-n-ab44011b3" target="_blank"><img src="images/linkedin.png" alt=""/></a>
+          </div>
+          <div class="connect-link"><img src="images/github.png" alt="" /></div>
+        </div>
+      </div>
+    </div>
+    <div class="skillset-container">
+      <div class="summary-container">
+        <div class="skillset">My Skillset</div>
+        <div class="skills-summary">
+          With a rich spectrum of technical skills spanning development,
+          databases, and design, I offer a well-rounded profile for the tech and
+          design industry. My proficiency in various categories enables me to
+          contribute effectively to diverse projects and deliver exceptional
+          results.
+        </div>
+      </div>
+      <div style = "margin-top: 4vh;" class="skills-container">
+        <section id="section2"></section>
+        <div class="card">
+          <div class="align">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+          </div>
+
+          <h1>Front-End</h1>
+          <p>
+            <b>JavaScript</b>
+            <b>Angular</b>
+            <b>HTML5</b>
+            <b>CSS3</b>
+            <b>ReactJS</b>
+          </p>
+        </div>
+        <div class="card">
+          <div class="align">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+          </div>
+
+          <h1>Back-End</h1>
+          <p>
+            <b>Java</b>
+            <b>Python</b>
+            <b>C#</b>
+            <b>SQL</b>
+            <b>PL/SQL</b>
+            <b>MySQL</b>
+            
+          </p>
+        </div>
+        <div class="card">
+          <div class="align">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+          </div>
+
+          <h1>Design</h1>
+          <p>
+            <b>Prototyping</b>
+            <b>Wireframing</b>
+            <b>AdobeXD</b>
+            <b>Figma</b>
+            <b>Web Design</b>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="projects-container">
+      <section id="section3"></section>
+      <div class="projects-heading">Featured Projects</div>
+      <div class="project1">
+        <div class="project-summary-container">
+          <img
+            src="images/Group_11.png"
+            alt="image source not found"
+            class="responsive-image"
+          />
+          <div class="prj-container">
+            <div class="project-description">Figma</div>
+            <div class="project-name">E-commerse Website</div>
+            <div class="project-summary">
+              Project focused on redesigning an already existing website that
+              has bad UI/UX design principles. Our team was tasked with
+              redesigning and restructuring the website to be more user friendly
+              and following design principles.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project2">
+        <div class="project-summary-container">
+          <img
+            src="images/Group_14.png"
+            alt="image source not found"
+            class="responsive-image"
+          />
+          <div class="prj-container">
+            <div class="project-description">PowerApps</div>
+            <div class="project-name">HealthX</div>
+            <div class="healthx-summary">
+              Application made using Microsoft Power Apps to allow patients to
+              connect with Doctors and Hospitals in their local area. The app
+              allows Patients to book and cancel appointments.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-container">
+      <div class="message-container">
+        <div class="contact-name"></div>
+        <div class="email"></div>
+        <div class="message"></div>
+        <div class="send"></div>
+      </div>
+    </div>
+  </body>
+  <footer class="footer">2023 Ethan Nagoor</footer>
+</html>
