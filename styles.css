@@ -19,7 +19,12 @@ li {
   width: 100%;
   display: flex;
 }
-
+.responsive-figma{
+  width: 1170px;
+  height: 300px;
+  border-color: black;
+  
+}
 .link {
   font-size: clamp(1em, 1.2em, 3em);
   font-family: Arial, Helvetica, sans-serif;
